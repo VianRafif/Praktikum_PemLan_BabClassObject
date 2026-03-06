@@ -22,8 +22,13 @@ public class Mobil {
         kecepatan = i;
     }
 
+    public double rubahSekond(double i) {
+        double detik = i * 3600;
+        return detik;
+    }
+
     public void setWaktu(double i) {
-        Waktu = i;
+        Waktu = rubahSekond(i);
     }
 
     public void displayMessage() {
@@ -31,6 +36,6 @@ public class Mobil {
         System.out.println("mempunyai nomor plat " + noPlat);
         System.out.println("serta memililki warna " + warna);
         System.out.println("dan mampu menempuh kecepatan " + kecepatan + " km/jam");
-        System.out.println("dengan waktu tempuh " + Waktu + " jam");
+        System.out.println("dengan waktu tempuh " + Waktu + " detik");
     }
 }
