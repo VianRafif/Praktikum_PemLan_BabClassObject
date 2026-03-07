@@ -12,12 +12,11 @@ public class MainMobil {
         System.out.println("Masukkan manufaktur mobil : ");
         m1.setManufaktur(input.nextLine());
         System.out.println("Masukkan nomor plat mobil : ");
-        // String noPlat = input.nextLine();
         m1.setNoPlat(input.nextLine());
         System.out.println("Masukkan warna mobil : ");
         m1.setWarna(input.next());
         System.out.println("Masukkan kecepatan mobil (dalam km/jam): ");
-        m1.setKecepatan(input.nextInt());
+        m1.setKecepatan(input.nextDouble());
         input.nextLine();
         System.out.println("Masukkan waktu tempuh mobil (dalam jam): ");
         m1.setWaktu(input.nextDouble());
